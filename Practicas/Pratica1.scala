@@ -34,3 +34,5 @@ val interpolar = "Estoy escribiendo un "+ bird
 
 val tupla = ((2,4,5),(1,2,3),(3.1416,23))
 println(tupla._3)
+
+
