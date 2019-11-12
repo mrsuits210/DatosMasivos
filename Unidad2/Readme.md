@@ -1,6 +1,6 @@
 **Gradient Boosted Tree Classifer**
 
-#Definition#
+#Definition
 It is a machine learning technique used for regression analysis and for statistical classification problems, which produces a predictive model in the form of a set of weak prediction models, typically decision trees.
 GBT builds trees one at a time, where each new tree helps correct the mistakes made by a previously trained tree.
 
@@ -11,7 +11,7 @@ Compared to random forest, GBT works with trees sequentially, so the first tree 
 As in the following picture.
 ![Comparativa ramdom forest y GBT](https://raw.githubusercontent.com/mrsuits210/DatosMasivos/Unidad2/Unidad2/Images/Imagen3.png)
 
-##How Gradient Boosted Trees Classifer works##
+*How Gradient Boosted Trees Classifer works*
 Gradient reinforcement models have a very low interpretation capacity because the second tree in the model no longer predicts the same objective as the original model, the later trees in the model seek to predict how far the original predictions of the truth were from use the residues of the previous trees In this way, each subsequent tree of the gradient increase model slowly reduces the general error of the previous trees.
 This allows gradient augmentation models to have a very high predictive power but a low capacity for interpretation.
 
