@@ -23,15 +23,11 @@ val VectorAssembler assembler = new VectorAssembler().setInputCols(inputColumns)
 val featureSet = assembler.transform(data);
 
 // split data random in trainingset (70%) and testset (30%)
-long seed = 5043;
-val trainingAndTestSet = featureSet.randomSplit(new double[]{0.7, 0.3}, seed);
-val trainingSet = trainingAndTestSet[0];
-val testSet = trainingAndTestSet[1];
 
 
-//val splits = data.randomSplit(Array(0.6, 0.4), seed = 1234L)
-//val train = splits(0)
-//val test = splits(1)
+val splits = data.randomSplit(Array(0.6, 0.4), seed = 1234L)
+val train = splits(0)
+val test = splits(1)
 
 val layers = Array[Int](3, 5, 4, 3)
 

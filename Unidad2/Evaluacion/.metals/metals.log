@@ -1,0 +1,17 @@
+INFO  time: initialize in 1.02s
+WARN  no build tool detected in workspace '/home/adrian/Documentos/DatosMasivos/Unidad2/Evaluacion'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/adrian/Documentos/DatosMasivos/Unidad2/Evaluacion/examen.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target: /home/adrian/Documentos/DatosMasivos/Unidad2/Evaluacion/examen.scala
+WARN  no build target: /home/adrian/Documentos/DatosMasivos/Unidad2/Evaluacion/examen.scala
+WARN  no build target: /home/adrian/Documentos/DatosMasivos/Unidad2/Evaluacion/examen.scala
+WARN  no build target: /home/adrian/Documentos/DatosMasivos/Unidad2/Evaluacion/examen.scala
+WARN  no build target: /home/adrian/Documentos/DatosMasivos/Unidad2/Evaluacion/examen.scala
+WARN  no build target: /home/adrian/Documentos/DatosMasivos/Unidad2/Evaluacion/examen.scala
+WARN  no build target: /home/adrian/Documentos/DatosMasivos/Unidad2/Evaluacion/examen.scala
+WARN  no build target: /home/adrian/Documentos/DatosMasivos/Unidad2/Evaluacion/examen.scala
+WARN  no build target: /home/adrian/Documentos/DatosMasivos/Unidad2/Evaluacion/examen.scala
+WARN  no build target: /home/adrian/Documentos/DatosMasivos/Unidad2/Evaluacion/examen.scala
+WARN  no build target: /home/adrian/Documentos/DatosMasivos/Unidad2/Evaluacion/examen.scala
+WARN  no build target: /home/adrian/Documentos/DatosMasivos/Unidad2/Evaluacion/examen.scala
+WARN  no build target: /home/adrian/Documentos/DatosMasivos/Unidad2/Evaluacion/examen.scala
