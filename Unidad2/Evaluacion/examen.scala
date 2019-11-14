@@ -19,10 +19,18 @@ val data = spark.read.format("csv")
 
 // identify the feature colunms
 val inputColumns = ("SepalLengthCm", "SepalWidthCm", "PetalLengthCm", "PetalWidthCm")
-val VectorAssembler assembler = new VectorAssembler().setInputCols(inputColumns).setOutputCol("features")
+val assembler = new VectorAssembler().setInputCols(inputColumns).setOutputCol("features")
 val featureSet = assembler.transform(data);
 
+
+val labelIndexer = new StringIndexer().setInputCol("class").setOutputCol("indexedLabel").fit(featureSet)
+println(s"Found labels: ${labelIndexer.labels.mkString("[", ", ", "]")}")
+
+//Los valores que se indentifican son indexados y se añade maxCategories para que los valores mayores a 4 sean tratados como continuos
+val featureIndexer = new VectorIndexer().setInputCol("features").setOutputCol("indexedFeatures").setMaxCategories(4).fit(featureSet)
+
 // split data random in trainingset (70%) and testset (30%)
+
 
 
 val splits = data.randomSplit(Array(0.6, 0.4), seed = 1234L)
