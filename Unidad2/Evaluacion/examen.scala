@@ -33,7 +33,7 @@ val testSet = trainingAndTestSet[1];
 //val train = splits(0)
 //val test = splits(1)
 
-val layers = Array[Int](4, 5, 4, 3)
+val layers = Array[Int](3, 5, 4, 3)
 
 
 
