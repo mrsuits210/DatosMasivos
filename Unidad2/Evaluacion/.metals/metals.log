@@ -126,3 +126,4 @@ WARN  no build target: /home/adrian/Documentos/DatosMasivos/Unidad2/Evaluacion/e
 WARN  no build target: /home/adrian/Documentos/DatosMasivos/Unidad2/Evaluacion/examen.scala
 WARN  no build tool detected in workspace '/home/adrian/Documentos/DatosMasivos/Unidad2/Evaluacion'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
 WARN  no build tool detected in workspace '/home/adrian/Documentos/DatosMasivos/Unidad2/Evaluacion'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+INFO  shutting down Metals
