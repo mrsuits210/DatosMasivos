@@ -11,6 +11,7 @@ K-Means algorithm can be used to identifies unknown groups in complex and unlabe
 - Detect unauthorized IoT devices based on network traffic
 - Identity crime locality
 - Group inventory by sales
+[Code](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/K-means_convergence.gif/512px-K-means_convergence.gif)
 ```
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.ml.feature.VectorAssembler
