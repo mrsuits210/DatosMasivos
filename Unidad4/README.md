@@ -13,7 +13,7 @@ In general, Machine Learning algorithms can be classified into two types:
 Spark MLlib provides both supervised and unsupervised learning algorithms that offer solutions to the three most used techniques in the world of Machine Learning:
 
 
-[Imagen1 ](https://raw.githubusercontent.com/mrsuits210/DatosMasivos/Unidad4/Unidad4/images/1.png)
+![Imagen1](https://raw.githubusercontent.com/mrsuits210/DatosMasivos/Unidad4/Unidad4/images/1.png)
 
 
 In this document we will be seeing only algorithms for classification using the spark mlib library, the algorithms that we will play in this work will be the following:
@@ -32,7 +32,7 @@ A decision tree consists of:
 - Borders / branch: corresponds to the result of a test and connects to the next node or sheet.
 - Sheet nodes: terminal nodes that predict the result (represent class labels or class distribution).
 
-[Imagen2 ](https://raw.githubusercontent.com/mrsuits210/DatosMasivos/Unidad4/Unidad4/images/2.png)
+![Imagen2 ](https://raw.githubusercontent.com/mrsuits210/DatosMasivos/Unidad4/Unidad4/images/2.png)
 
 *To understand the concept of Decision Tree, consider the previous example. Let's say you want to predict whether a person is fit or not, given their information such as age, eating habits, physical activity, etc. Decision nodes are questions like 'What is the age?', 'Do you exercise?', 'Do you eat a lot of pizzas? And the sheets represent results as 'fit' or 'not fit'*
 
@@ -40,10 +40,10 @@ There are two main types of decision trees:
 - Classification trees.
 What we have seen before is an example of a classification tree, where the result was a variable like 'fit' or 'not fit'. Here the decision variable is categorical / discrete.
 Such a tree is constructed through a process known as binary recursive partition. This is an iterative process of dividing data into partitions and then dividing them further into each of the branches.
-[Imagen3](https://raw.githubusercontent.com/mrsuits210/DatosMasivos/Unidad4/Unidad4/images/3.png)
+![Imagen3](https://raw.githubusercontent.com/mrsuits210/DatosMasivos/Unidad4/Unidad4/images/3.png)
 - Regression trees.
 Decision trees where the objective variable can take continuous values ​​(typically real numbers) are called regression trees. (for example, the price of a house or the length of a patient's stay in a hospital)
-[Imagen4](https://raw.githubusercontent.com/mrsuits210/DatosMasivos/Unidad4/Unidad4/images/4.png)
+![Imagen4](https://raw.githubusercontent.com/mrsuits210/DatosMasivos/Unidad4/Unidad4/images/4.png)
 
 ### Creating a decision tree
 Decision trees are created using a heuristic called recursive partition. This approach is also commonly known as divide and conquer because it divides the data into subsets, which are then repeatedly divided into even smaller subsets, and so on until the process stops when the algorithm determines that the data within the subsets are sufficiently homogeneous. , or other detention criteria have been met.
@@ -65,19 +65,19 @@ Disadvantages of classification with decision trees:
 'Random Forest' as the name implies is a forest and the forest consists of trees. Here the trees mentioned are decision trees. Then, the full definition will be "Random Forest is a random collection of decision trees". Therefore, this algorithm is basically an extension of the Decision Tree algorithm.
 
 In this algorithm, we create multiple decision trees in their entirety. Yes, we don't need to prune our decision trees here. There is no such limitation for trees in Random Forest. The problem here is that we do not provide all the data for each decision tree to consume. We provide a random subset of our training data to each decision tree. This process is called Bagging or Bootstrap Aggregating.
-[Imagen5](https://raw.githubusercontent.com/mrsuits210/DatosMasivos/Unidad4/Unidad4/images/5.png)
+![Imagen5](https://raw.githubusercontent.com/mrsuits210/DatosMasivos/Unidad4/Unidad4/images/5.png)
 
 Bagging is a general procedure that can be used to reduce the variance of those algorithms that have high variance. In this process, subsamples are created for the data set and a subset of attributes, which we use to train our decision models and then consider each model and choose the decision by voting - (classification) or taking the average (regression) For the forest randomly, we usually take two thirds of the data with replacement (the data can be repeated for any other decision tree, it does not need to be unique data). And the subset of the attributes m
 
 In Random Forest each decision tree predicts a response for an instance. And the final answer is decided based on the vote. That means (in classification) that the response that most decision trees receive becomes the final answer. (In the regression, the average of all responses becomes the final answer).
 
-[Imagen6](https://raw.githubusercontent.com/mrsuits210/DatosMasivos/Unidad4/Unidad4/images/6.png)
+![Imagen6](https://raw.githubusercontent.com/mrsuits210/DatosMasivos/Unidad4/Unidad4/images/6.png)
 
 ## Gradient-boosted tree classifier
 It is a machine learning technique used for regression analysis and for statistical classification problems, which produces a predictive model in the form of a set of weak prediction models, typically decision trees.
 GBT builds trees one at a time, where each new tree helps correct the mistakes made by a previously trained tree.
 
-[Imagen7](https://raw.githubusercontent.com/mrsuits210/DatosMasivos/Unidad4/Unidad4/images/7.png)
+![Imagen7](https://raw.githubusercontent.com/mrsuits210/DatosMasivos/Unidad4/Unidad4/images/7.png)
 
 ### objective
 It is to repeatedly take advantage of the patterns in the residuals and strengthen a model with weak predictions and improve it. Once we reach a stage where the residues do not have any pattern that can be modeled, we can stop modeling the residues (otherwise, it could cause overfitting). Algorithmically, we are minimizing our loss function, so that the loss of proof reaches its minimums.
@@ -97,7 +97,7 @@ For the comparison of these three algorithms we use apache spark, with its exten
 Scala is a modern multi-paradigm programming language designed to express common programming patterns in a concise, elegant, and secure typing way. Easily integrate features of object-oriented and functional languages.
 Thanks to the implementation of this language we can program an algorithm in a simpler way with a performance that exceeds other languages, because we work through a base with spark.
 
-[Imagen8](https://raw.githubusercontent.com/mrsuits210/DatosMasivos/Unidad4/Unidad4/images/8.png)
+![Imagen8](https://raw.githubusercontent.com/mrsuits210/DatosMasivos/Unidad4/Unidad4/images/8.png)
 
 # Results
 The following dataset was used to make the comparison.
@@ -161,7 +161,7 @@ println(s"Learned classification GBT model:\n ${gbtModel.toDebugString}")
 # Results table
 The System.nanoTime function was used to see the execution time of each algorithm.
 
-[Imagen9](https://raw.githubusercontent.com/mrsuits210/DatosMasivos/Unidad4/Unidad4/images/9.png)
+![Imagen9](https://raw.githubusercontent.com/mrsuits210/DatosMasivos/Unidad4/Unidad4/images/9.png)
 
 If we realize almost all three have a similar accuracy starting with the highest which is Decision Tree, then Gradient-Boosted and finally Random Forest.
 In this example, the winner would be Decision Tree because it had a slightly better prediction and better execution time compared to the other two algorithms, but that is because we train the models with a certain amount of iterations which in the end point of view the Winner would be random forest because it is almost as accurate as gradient boosted, but due to its bagging technique it does not tend to overfitting as gradient boosted or Decision tree would do that depending on the iterations and the type of data you put are very prone to overfitting.
